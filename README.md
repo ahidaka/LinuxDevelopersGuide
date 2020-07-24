@@ -3,48 +3,22 @@
 ahidaka / LinuxDevelopersGuide
 <br/>
 
-## CPIO
+### コマンド
 
-ファイルシステムやディレクトリの丸ごとコピー、バックアップ。
+#### [CPIO](cpio.md)
 
-### ツリー構造毎コピー（findとの組み合わせ）
+ファイルシステムやディレクトリの丸ごとコピー、バックアップ。Linux 標準コマンドの使い方。
 
-```sh
-$ find . | cpio -dump /somewhare/target_dir
-```
-単一ファイルコピー：echoやlsとの組み合わせ
-（通常はcp -aで十分だが、/dev/等 cpで取れないものを含むFilesystem複製に有効、所有者や権限も保持）
+### 外部ツールとインストール
 
-```sh
-$ echo *something* | cpio -dump /somewhare/target_dir
+#### [Ubuntu ISO USB](Ubuntu-iso-usb.md)
 
-$ ls *somedir*/* | cpio -dump /somewhare/target_dir
-```
+ を使用して、XXXX を自動的に入手、USBに書き込む。
 
-指定ファイルのツリーをコピー
+#### [GParted USB](GParted-usb.md)
 
-```sh
-#!/bin/sh
-for file in `echo b* c* d* e* i* lib m* r* s* u* v*`; do
-    echo file = $file
-    find $file | cpio -dump /home/backup
-done
-```
+Tuxboot を使用して、GParted live 最新版 ISO を自動的に入手、USBに書き込む。
 
-※cpioでは他にアーカイブの作成と復元もできるが、普段使わないので使い方は省略。
+#### [memtest86+ USB](memtest86.md)
 
-### cpio の主なオプション
-<P>-d, --make-directories <br/>
-必要に応じてディレクトリを作成。
-
--u, --unconditional <br/>
-全てのファ イルを上書き。
-
--m, --preserve-modification-time <br/>
-コピー先ファイル生成時に、コピー元の更新時刻を復元。
-
--p, --pass-through <br/>
-パススルー（コピー）・モード。
-
--v, --verbose <br/>
-冗長モード。ファイル名表示。
+USB boot 対応版の新しい memtest86+ メモリーテストツールを入手して実行。
