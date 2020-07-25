@@ -13,7 +13,11 @@ ahidaka / LinuxDevelopersGuide
 
 #### [Ubuntu ISO USB](Ubuntu-iso-usb.md)
 
- を使用して、XXXX を自動的に入手、USBに書き込む。
+Ubuntu ISO イメージをブータブルな USB フラッシュメモリーに書き込む。
+
+#### [Ubuntu ISO USB](Ubuntu-Raspberry-pi.md)
+
+Raspberry Pi 用 Ubuntu (32bit / 64bit) の入手とインストール。
 
 #### [GParted USB](GParted-usb.md)
 
