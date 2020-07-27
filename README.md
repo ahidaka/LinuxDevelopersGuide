@@ -15,7 +15,7 @@ ahidaka / LinuxDevelopersGuide
 
 Ubuntu ISO イメージをブータブルな USB フラッシュメモリーに書き込む。
 
-#### [Ubuntu ISO USB](Ubuntu-Raspberry-pi.md)
+#### [Ubuntu Raspberry Pi](Ubuntu-Raspberry-pi.md)
 
 Raspberry Pi 用 Ubuntu (32bit / 64bit) の入手とインストール。
 
