@@ -11,6 +11,8 @@ ahidaka / LinuxDevelopersGuide
 
 ### 外部ツールとインストール
 
+Windows で動作させて Linux を使うための便利ツール
+
 #### [Ubuntu ISO USB](Ubuntu-iso-usb.md)
 
 Ubuntu ISO イメージをブータブルな USB フラッシュメモリーに書き込む。
